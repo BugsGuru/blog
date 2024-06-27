@@ -55,7 +55,7 @@ func sum(wg *sync.WaitGroup) {
 ```sh
 go tool trace trace.out
 ```
-![trace-img.jpg](img/trace-img.jpg)
+![trace-img.jpg](../img/trace-img.jpg)
 可以看到sum的goroutine在不同的Proc上运行
 
 ## Q2:请描述 runtime/trace 包的使用场景
