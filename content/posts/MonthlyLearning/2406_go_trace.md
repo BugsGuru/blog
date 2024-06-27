@@ -52,11 +52,10 @@ func sum(wg *sync.WaitGroup) {
 	}
 }
 ```
+分析trace.out:
 ```sh
 go tool trace trace.out
 ```
-![trace.jpg](../img/trace.jpg)
-可以看到sum的goroutine在不同的Proc上运行
 
 ## Q2:请描述 runtime/trace 包的使用场景
 1. 性能瓶颈分析：通过跟踪程序的执行路径，识别并优化性能瓶颈，例如长时间运行的函数或高频率调用的函数。
