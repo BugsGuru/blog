@@ -56,7 +56,7 @@ CREATE TABLE Orders (
    3NF，是对字段冗余性的约束，即任何字段不能由其他字段派生出来，它要求字段没有冗余。
 
 ### ER图
-```Mermaid
+```mermaid
 erDiagram
     CUSTOMERS {
         INT customer_id PK
